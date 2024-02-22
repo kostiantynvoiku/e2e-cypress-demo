@@ -1,5 +1,3 @@
 /node_modules
-cypress/plugins/accessCreds.json
-cypress/plugins/id_rsa
 cypress/downloads
 cypress.env.json
