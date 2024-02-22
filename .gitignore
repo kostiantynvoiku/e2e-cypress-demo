@@ -1,4 +1,4 @@
 /node_modules
 cypress/downloads
 cypress.env.json
-.DS_Store
+**/.DS_Store
