@@ -1,0 +1,9 @@
+{
+  "data": {
+      "type": "otp_request_submit",
+      "attributes": {
+          "phone": "",
+          "code": ""
+      }
+  }
+}

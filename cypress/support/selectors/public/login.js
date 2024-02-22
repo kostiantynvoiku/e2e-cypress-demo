@@ -1,0 +1,22 @@
+export default {
+  LOGIN_EMAIL: '[data-cy="login_email"]',
+  LOGIN_PASSWORD: '[data-cy="login_password"]',
+  LOGIN_SUBMIT: '[data-cy="login_form_submit"]',
+  LOGIN_SIGNUP_LINK: '[data-cy="login_signup"]',
+  LOGIN_REMEMBER_ME: '[data-cy="login_rememberMe"]',
+  LOGIN_ERROR_MESSAGE_RESET_PASSWORD_LINK:
+    '[data-cy="login_error_forgot_password_link"]',
+  LOGIN_EMAIL_INPUT_SECTION: '[data-cy="login_password-wrapper"]',
+  FORGOT_PASSWORD_LINK: '[data-cy="login_forgot_password_link"]',
+  FB_TERMS: '[data-cy="login_fb_terms"]',
+  PHONE_INPUT: '[data-cy="CI_phoneValidation_editModal_input"]',
+  SUBMIT_PHONE: '[data-cy="CI_login_phoneAuth_continue"]',
+  LOGIN_WITH_PHONE: '[data-cy="CI_login_phoneAuth_continueWithEmail"]',
+  PHONE_CODE_INPUT: '[data-cy*="CI_otpValidation_input"]',
+  SIGNUP_EMAIL: '[data-cy="CI_login_signUp_email"]',
+  SIGNUP_PASSWORD: '[data-cy="CI_login_signUp_password"]',
+  SIGNUP_CONTINUE: '[data-cy="CI_login_signUp_continue"]',
+  SIGNUP_FIRST_NAME: '[data-cy="CI_login_firstName_field"]',
+  SIGNUP_LAST_NAME: '[data-cy="CI_login_lastName_field"]',
+  SIGNUP_NAME_CONTINUE: '[data-cy="CI_login_name_field_continue"]',
+}

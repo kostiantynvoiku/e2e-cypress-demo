@@ -1,0 +1,10 @@
+{
+    "data": {
+        "type": "user", 
+        "id": "uuid", 
+        "attributes": {
+            "is_active": false, 
+            "deactivation_reason": ""
+        }
+    }    
+}

@@ -1,0 +1,84 @@
+{
+    "data": {
+        "type": "work_schedule",
+        "attributes": {
+            "is_available_all_time": true
+        },
+        "relationships": {
+            "schedule_time": {
+                "data": [
+                    {
+                        "id": "mon",
+                        "type": "work_schedule_time",
+                        "attributes": {
+                            "day_of_week": "mon",
+                            "is_enabled": true,
+                            "time_from": "00:00",
+                            "time_to": "24:00"
+                        }
+                    },
+                    {
+                        "id": "tue",
+                        "type": "work_schedule_time",
+                        "attributes": {
+                            "day_of_week": "tue",
+                            "is_enabled": true,
+                            "time_from": "00:00",
+                            "time_to": "24:00"
+                        }
+                    },
+                    {
+                        "id": "wed",
+                        "type": "work_schedule_time",
+                        "attributes": {
+                            "day_of_week": "wed",
+                            "is_enabled": true,
+                            "time_from": "00:00",
+                            "time_to": "24:00"
+                        }
+                    },
+                    {
+                        "id": "thu",
+                        "type": "work_schedule_time",
+                        "attributes": {
+                            "day_of_week": "thu",
+                            "is_enabled": true,
+                            "time_from": "00:00",
+                            "time_to": "24:00"
+                        }
+                    },
+                    {
+                        "id": "fri",
+                        "type": "work_schedule_time",
+                        "attributes": {
+                            "day_of_week": "fri",
+                            "is_enabled": true,
+                            "time_from": "00:00",
+                            "time_to": "24:00"
+                        }
+                    },
+                    {
+                        "id": "sat",
+                        "type": "work_schedule_time",
+                        "attributes": {
+                            "day_of_week": "sat",
+                            "is_enabled": true,
+                            "time_from": "00:00",
+                            "time_to": "24:00"
+                        }
+                    },
+                    {
+                        "id": "sun",
+                        "type": "work_schedule_time",
+                        "attributes": {
+                            "day_of_week": "sun",
+                            "is_enabled": true,
+                            "time_from": "00:00",
+                            "time_to": "24:00"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

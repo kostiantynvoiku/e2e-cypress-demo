@@ -1,0 +1,8 @@
+{
+  "data": {
+    "type": "otp_request_create",
+    "attributes": {
+        "phone": ""
+    }
+  }
+}

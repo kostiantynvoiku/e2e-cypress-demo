@@ -1,0 +1,38 @@
+{
+    "data": {
+      "type": "business",
+      "attributes": {
+        "company_name": "company_name",
+        "legal_registration_number": "21342342342348",
+        "legal_number_status": "verification_asked",
+        "vat_identification_number": "123456789",
+        "vat_identification_number_status": "none",
+        "nb_employees": 1,
+        "year_founded": 2000,
+        "address": {
+          "apartment": "58",
+          "street": "rue Lambrechts"
+        },
+        "website": "www.robotics.com",
+        "accepted_payment_methods": [],
+        "finalize_signup": false,
+        "do_welcome": false,
+        "decline_offered_signup_request_reason": "{\"reason\":\"answer_1\"}",
+        "price_assurance_onboarding_seen": true,
+        "unread_messages_ad_seen": true,
+        "leads_opportunities_ad_seen": true,
+        "pro_inbox_leads_moved_ad_seen": true,
+        "remote_option_ad_seen": true,
+        "is_booking_pro": false,
+        "complete_registration": "sub_njs"
+      },
+      "relationships": {
+        "city": {
+          "data": {
+            "id": "city_uuid",
+            "type": "city"
+          }
+        }
+      }
+    }
+  }

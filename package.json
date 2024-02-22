@@ -1,0 +1,30 @@
+{
+  "name": "cypress-demo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write ./**/*.{ts,tsx,js}",
+    "format:ci": "prettier --check ./**/*.{ts,tsx,js}",
+    "cypress:open": "npx cypress open"
+  },
+  "devDependencies": {
+    "@cypress/request": "2.88.7",
+    "@cypress/skip-test": "2.6.1",
+    "async-retry": "^1.3.3",
+    "crypto-js": "^4.2.0",
+    "cypress": "^13.6.5",
+    "cypress-real-events": "1.10.3",
+    "cypress-wait-until": "1.7.2",
+    "eslint": "7.32.0",
+    "eslint-config-airbnb-typescript-prettier": "4.2.0",
+    "eslint-plugin-cypress": "2.12.1",
+    "faker": "5.5.3",
+    "file-loader": "6.2.0",
+    "mysql-ssh": "1.0.6",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "npm": ">=8.0.0",
+    "node": ">=16.8.0"
+  }
+}

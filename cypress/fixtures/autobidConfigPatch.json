@@ -1,0 +1,12 @@
+{
+    "data": {
+        "type": "autobid_config",
+        "id": "id",
+        "attributes": {
+            "is_enabled": null,
+            "turbo": null,
+            "weekly_budget": 1,
+            "is_bookable": null
+        }
+    }
+}

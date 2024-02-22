@@ -1,0 +1,28 @@
+{
+    "data": {
+      "type": "pro_base_price",
+      "attributes": {
+        "price": 40,
+        "price_type": "hour",
+        "discount": 10,
+        "free_offer_value": 15,
+        "free_offer_type": "call",
+        "free_offer_duration_type": "hour",
+        "additional_info": "description"
+      },
+      "relationships": {
+        "pro_profile": {
+          "data": {
+            "id": "pro_profile_id",
+            "type": "pro_profile"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "service_id",
+            "type": "service"
+          }
+        }
+      }
+    }
+  }

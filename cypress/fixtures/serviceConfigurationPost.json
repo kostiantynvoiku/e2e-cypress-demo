@@ -1,0 +1,22 @@
+{
+    "data": {
+      "type": "service_configuration",
+      "attributes": {
+        "is_enabled": true,
+        "is_modded": true,
+        "action_radius": 1,
+        "can_travel": true,
+        "can_host": true,
+        "can_work_remotely": true,
+        "setup_step": "complete"
+      },
+      "relationships": {
+        "service": {
+          "data": {
+            "type": "service",
+            "id": "service_uuid"
+          }
+        }
+      }
+    }
+  }

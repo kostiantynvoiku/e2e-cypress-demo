@@ -1,0 +1,47 @@
+name: 🧪 Cypress E2E Tests
+
+on:
+  workflow_dispatch:
+    inputs:
+      baseUrl:
+        description: 'Testing Domain'
+        required: true
+        default: 'https://www.develop.starofservice.be'
+      testFile:
+        description: 'Test File'
+        required: true
+        default: '**'
+        # path to spec file or folder can be specified as following:
+        # 'cypress/e2e/listingPages/myTest.cy.js' ==> '**/myTest.*'
+        # 'cypress/e2e/listingPages' ==> **/listingPages/*
+
+jobs:
+  test:
+    name: 🤖 CYPRESS RUN
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        containers: [1, 2, 3, 4, 5]
+    steps:
+      - name: 🛎 CHECKOUT 'default' BRANCH
+        if: github.event_name == 'workflow_dispatch'
+        uses: actions/checkout@v3
+      - name: 🧪 RUN TEST FILES
+        if: github.event_name == 'workflow_dispatch'
+        uses: cypress-io/github-action@v5
+        with:
+          browser: chrome
+          record: true
+          parallel: true
+          group: 'E2E'
+          spec: ${{ github.event.inputs.testFile }}
+          config: baseUrl=${{ github.event.inputs.baseUrl }}
+          tag: E2E
+env:
+  CYPRESS_admin:  ${{ secrets.ADMIN }}
+  CYPRESS_adminPass:  ${{ secrets.ADMIN_PASS }}
+  CYPRESS_dbHost:  ${{ secrets.DB_HOST }}
+  CYPRESS_dbPassword:  ${{ secrets.DB_PASS }}
+  CYPRESS_dbUser:  ${{ secrets.DB_USER }}
+  CYPRESS_privateKey:  ${{ secrets.RSA_PRIVATE_KEY }}
