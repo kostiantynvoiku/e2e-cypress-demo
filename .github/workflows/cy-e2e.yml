@@ -32,11 +32,8 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           browser: chrome
-          parallel: true
-          group: 'E2E'
           spec: ${{ github.event.inputs.testFile }}
           config: baseUrl=${{ github.event.inputs.baseUrl }}
-          tag: E2E
 env:
   CYPRESS_admin:  ${{ secrets.ADMIN }}
   CYPRESS_adminPass:  ${{ secrets.ADMIN_PASS }}
